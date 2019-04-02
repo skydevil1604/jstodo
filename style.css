@@ -1,0 +1,162 @@
+body {
+  background: #eee;
+  color: #444;
+  font-family: 'Helvetica', arial, sans-serif;
+}
+
+.container {
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid #cfcbcc;
+  border-radius: 25px;
+  margin: 80px auto;
+  padding: 20px;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+}
+
+form {
+  display: flex;
+}
+
+input {
+    width: 455px;
+    height: 55px;
+    border-radius: 27px;
+    background-color: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    outline: 0;
+    padding: 0 0 0 32px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: GothamPro,Arial,san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#add {
+  width: 30%;
+  border: 0;
+  outline: 0;
+  width: 120px;
+  height: 40px;
+  background:         linear-gradient(#3BA4C7, #07475c);
+  box-shadow: 10px 6px 17px -1px #000000;
+  border-radius: 30px;
+  padding: 0;
+  margin: auto;
+  text-shadow: 0 1px 1px rgba(0,0,1,.15);
+  color: #fff;
+  font-family: GothamPro,Arial,san-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+h1,h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+h2 {
+  color: gray;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+ul li {
+    color: white;
+    font-weight: 400;
+    border-bottom: 1px solid #cfcbcc;
+    line-height: 1.5;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  ul li button {
+    width: 20%;
+    height: 34px;
+    position: absolute;
+    right: 10px;
+  }
+
+ ul li button:before {
+  content: "DELETE";
+  position: absolute;
+  left: 33px;
+  top: -2px;
+ }
+  
+ ul li:before {
+      content: "\25A1";
+      padding: 10px 10px;
+      font-size: 20px;
+  }
+
+ ul li:hover {
+      text-decoration: line-through;
+      cursor: pointer;
+  }
+
+ ul li:last-child {
+      border-bottom: none;
+  } 
+
+.checked {
+  color:#66ff00;
+  }
+
+.checked:before {
+      content: "\2713";
+      padding: 10px 10px;
+      font-size: 20px;
+  }
+
+.checked:hover {
+      text-decoration: none;
+    }
+
+#del {
+      border: 0;
+      outline: 0;
+      width: 120px;
+      height: 40px;
+      background:         linear-gradient(#3BA4C7, #07475c);
+      box-shadow: 10px 6px 17px -1px #000000;
+      border-radius: 30px;
+      padding: 0;
+      margin: auto;
+      text-shadow: 0 1px 1px rgba(0,0,1,.15);
+      color: #fff;
+      font-family: GothamPro,Arial,san-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 48px;
+      text-transform: uppercase;
+      cursor: pointer;
+  }
+
+#del:hover {
+    box-shadow: none;
+    background: #07475c;
+}
+/*.checked:hover:after {
+        content: "(remove)";
+        color: tomato;
+        text-align: right;
+      }*/
